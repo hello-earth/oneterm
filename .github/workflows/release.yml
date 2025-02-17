@@ -24,4 +24,5 @@ jobs:
       run: yarn install
  
     - name: Build Vue App
-      run: cd ./oneterm-ui && yarn run build 
+      working-directory: ./oneterm-ui
+      run: yarn run build 
