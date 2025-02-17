@@ -20,9 +20,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
  
     - name: Install dependencies
-      
-      run: ls /home/runner/work/oneterm/oneterm/
+      working-directory: oneterm-ui
+      run: yarn install 
  
     - name: Build Vue App
-      working-directory: ../oneterm-ui
+      working-directory: oneterm-ui
       run: yarn run build 
