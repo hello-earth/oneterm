@@ -21,7 +21,7 @@ jobs:
  
     - name: Install dependencies
       working-directory: ../oneterm-ui
-      run: ls && yarn install
+      run: ls 
  
     - name: Build Vue App
       working-directory: ../oneterm-ui
