@@ -12,10 +12,8 @@ jobs:
     strategy:
       matrix:
         node-version: [16.20.1]
+        
     steps:
-    - uses: actions/checkout@v4
-    - name: Build UI
-    
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2  # 设置Node.js版本
       with:
