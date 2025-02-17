@@ -20,7 +20,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
  
     - name: Install dependencies
-      run: yarn install
+      run: cd /oneterm-ui && yarn install
  
     - name: Build Vue App
-      run: yarn run build 
+      run: cd /oneterm-ui && yarn run build 
